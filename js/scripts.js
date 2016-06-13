@@ -31,6 +31,11 @@ $(document).ready(function(){
     $(".to-do-item").click(function(){
       $(this).hide().siblings('.edit-item').show().val($(this).text()).focus();
 
+      $('.edit-item').keypress(function(e){
+        if(e.which == 13){
+        $(this).hide().siblings(".to-do-item").show().text($(this).val());
+          }
+      });
       $(".edit-item").focusout(function(){
         $(this).hide().siblings(".to-do-item").show().text($(this).val());
       });
