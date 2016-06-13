@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     var newUserList = new ListItem(userInputtedTask);
 
-    $("ul#list-items").append("<div class='list-container'><li><span class='to-do-item'>" + newUserList.item  + "</span><input type='text' class='edit-item'></input></li>"  + "<button class='remove-item'>Remove</button>" + "<button class='complete-item'>Done</button></div>" );
+    $("ul#list-items").append("<div class='list-container sortable'><li><span class='to-do-item'>" + newUserList.item  + "</span><input type='text' class='edit-item'></input></li>"  + "<button class='remove-item'>Remove</button>" + "<button class='complete-item'>Done</button></div>" );
 
     // Remove task from to do list
     $(".remove-item").click(function(){
@@ -31,10 +31,15 @@ $(document).ready(function(){
       $(".edit-item").focusout(function(){
         $(this).hide().siblings(".to-do-item").show().text($(this).val());
       });
-      // $(".edit-item").show();
-
 
     });
     // Reorder tasks on to do list
+
+       $( "#sortable-list" ).sortable({
+          items: '.sortable'
+       });
+
+
+
   });
 });
