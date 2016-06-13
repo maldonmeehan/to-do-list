@@ -26,3 +26,13 @@
  .edit-item {
    display: none;
  }
+
+ footer {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+ }

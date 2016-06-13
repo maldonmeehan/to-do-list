@@ -24,32 +24,27 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>To Do List</h1>
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Add task</h2>
-            <form id="new-list">
-              <div class="form-group">
-                <label for="new-first-name">Add Task</label>
-                <input type="text" class="form-control" id="new-list-item">
-              </div>
-
-
-              <button type="submit" class="btn">Add</button>
-            </form>
-
-            <h2>New List:</h2>
-            <div id="sortable-list">
-              <ul id="list-items">
-
-              </ul>
-            </div>
-
-
-      <footer>
-        <p>&copy; 2016 Epicodus Pair Project, Inc.</p>
-      </footer>
-    </div> <!-- end container -->
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>To Do List</h1>
+          <form id="new-list">
+        <div class="form-group">
+          <label for="new-first-name">Add Task</label>
+          <input type="text" class="form-control" id="new-list-item">
+        </div>
+        <button type="submit" class="btn">Add</button>
+        </form>
+        <h2>New List:</h2>
+        <p>To move a particular item in the list drag and drop.</p>
+        <p>To edit a particular item double click on the item, edit your item and click outsite the box.</p>
+        <div id="sortable-list">
+          <ul id="list-items">
+          </ul>
+      </div>
+    </div>
+    <!-- end container -->
+    <footer>
+      <p>&copy; 2016 Epicodus Pair Project, Inc.</p>
+    </footer>
   </body>
 </html>
