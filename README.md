@@ -24,7 +24,9 @@ The project is to make a to do list webpage where a user can add tasks to create
 
 ## Known Bugs
 
-None at this point.  
+* Currently if user enters a space it outputs an empty list.
+* Currently if user deletes all characters on an edited list item and submits, it will create an empty list item.
+* Currently a user can not uncross a done item.
 
 ## Support and contact details
 
