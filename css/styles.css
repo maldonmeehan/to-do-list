@@ -1,1 +1,24 @@
 /*This file is for your custom css.  All yours*/
+.list-container {
+  border: solid 2px black;
+  border-radius: 5%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-botton: 10px;
+}
+
+.list-container li {
+  font-size: 25px;
+  font-family: sans-serif;
+  list-style-type: none;
+  text-align: center;
+
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+ .edit-item {
+   display: none;
+ }
