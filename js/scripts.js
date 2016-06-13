@@ -11,9 +11,13 @@ $(document).ready(function(){
 
     var userInputtedTask = $("#new-list-item").val();
 
+    if (userInputtedTask === "") {
+      alert("Please fill out field before submitting.");
+      return false;
+    }
     var newUserList = new ListItem(userInputtedTask);
 
-    $("ul#list-items").prepend("<div class='list-container sortable'><li><span class='to-do-item'>" + newUserList.item + "</span><input type='text' class='edit-item'></input></li>" + "<button class='remove-item btn btn-danger'>X</button>" + " " + "<button class='complete-item btn btn-success'>✓</button></div>");
+    $("ul#list-items").prepend("<div class='list-container sortable'><li><span class='to-do-item'>" + newUserList.item + "</span><input type='text' class='edit-item'></input></li>" + "<button class='remove-item btn btn-danger btn-lg'>X</button>" + " " + "<button class='complete-item btn btn-success btn-lg'>✓</button></div>");
 
     // Remove task from to do list
 
