@@ -44,4 +44,4 @@ Please contact Ben or Maldon on Github for questions or concerns.
 
 Licensed under the MIT License
 
-Copyright (c) 2016 **Epicodus Pair Projects**
+Copyright (c) 2016 **Epicodus Pair Project**

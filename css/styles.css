@@ -8,17 +8,21 @@ body {
 p, label {
   font-size: 25px;
 }
+
 .to-do-item {
   font-family: Cedarville Cursive, cursive;
 }
+
 input {
   font-family: sans-serif;
 }
+
 h1 {
   font-family: Cedarville Cursive, cursive;
   font-weight: bold;
   text-decoration: underline;
 }
+
 .list-container {
   border: solid 2px lightblue;
   border-radius: 5%;
@@ -44,6 +48,7 @@ h1 {
   text-decoration: line-through;
   color: grey;
 }
+
  .edit-item {
    display: none;
  }

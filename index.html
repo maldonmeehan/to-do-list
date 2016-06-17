@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>To Do List</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
-    <!-- Jquery JS -->
-    <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/scripts.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h1>To Do List</h1>
-          <form id="new-list">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>To Do List</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+  <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>To Do List</h1>
+        <form id="new-list">
         <div class="form-group">
           <label for="new-first-name">Add Task</label>
           <input type="text" class="form-control" id="new-list-item">
         </div>
-        <button type="submit" class="btn btn-lg btn-info">Add</button>
-        </form>
-        <h2>New List:</h2>
-        <p>To move a particular item in the list drag and drop.</p>
-        <p>To edit a particular item double click on the item, edit your item and click outsite the box.</p>
+          <button type="submit" class="btn btn-lg btn-info">Add</button>
+          </form>
+          <h2>New List:</h2>
+          <p>To move a particular item in the list drag and drop.</p>
+          <p>To edit a particular item double click on the item, edit your item and click outsite the box.</p>
         <div id="sortable-list">
           <ul id="list-items">
           </ul>
+        </div>
       </div>
     </div>
-    <!-- end container -->
-    <footer>
-      <p>&copy; 2016 Ben Logue &amp; Maldon Meehan.</p>
-    </footer>
+  </div>
+  <!-- end container -->
+  <footer>
+    <p>&copy; 2016 Ben Logue &amp; Maldon Meehan.</p>
+  </footer>
   </body>
 </html>
